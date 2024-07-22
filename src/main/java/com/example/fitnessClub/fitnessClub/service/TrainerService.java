@@ -41,8 +41,4 @@ public class TrainerService {
     public Trainer findTrainerById(long id){
         return trainerRepo.findTrainerById(id).orElseThrow(() ->new UserNotFoundException("User by id " + id + "was not found"));
     }
-
-
-
-
 }
